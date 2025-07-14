@@ -1,0 +1,21 @@
+table {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #5399df;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: #3b727d;
+  color: white;
+}
+
+td{
+  text-align: center;
+  border: 1px solid black;
+  background-color: rgb(128, 141, 148);
+
+}

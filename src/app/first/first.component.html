@@ -1,0 +1,46 @@
+<div style="width: 80%; margin: auto; padding: 20px;">
+  <input
+    type="text"
+    [(ngModel)]="searchKeyword"
+    placeholder="輸入編號或問題"
+    style="margin-right: 10px; padding: 5px;"
+  />
+
+  <input
+    type="datetime-local"
+    [(ngModel)]="findtheTime"
+    style="margin-right: 10px;"
+  />
+  <input
+    type="datetime-local"
+    [(ngModel)]="endthisTime"
+    style="margin-right: 10px;"
+  />
+</div>
+
+<table border="1" cellpadding="10" style="width: 80%; margin: auto;">
+  <thead>
+    <tr>
+      <th>編號</th>
+      <th>問題</th>
+      <th>開始時間</th>
+      <th>結束時間</th>
+      <th>結果</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (student of filteredStudents; track student.id) {
+      <tr>
+        <td>{{ student.id }}</td>
+        <td>{{ student.main }}</td>
+        <td>{{ student.starttime }}</td>
+        <td>{{ student.endtime }}</td>
+        <td>
+          <a [routerLink]="['/second']" routerLinkActive="active">{{ student.result }}</a>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
+
+<router-outlet></router-outlet>

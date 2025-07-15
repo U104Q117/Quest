@@ -1,6 +1,8 @@
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -9,6 +11,7 @@ import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/rou
            RouterOutlet,
            RouterLinkActive,
            RouterLink,
+           MatTooltipModule
            ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

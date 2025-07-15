@@ -32,7 +32,9 @@
     @for (student of filteredStudents; track student.id) {
       <tr>
         <td>{{ student.id }}</td>
-        <td>{{ student.main }}</td>
+        <td>
+          <a [routerLink]="['/third']" routerLinkActive="active">{{ student.main }}</a>
+        </td>
         <td>{{ student.starttime }}</td>
         <td>{{ student.endtime }}</td>
         <td>

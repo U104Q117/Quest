@@ -19,3 +19,24 @@ td{
   background-color: rgb(128, 141, 148);
 
 }
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 40;
+  color: #ffffff;
+  font-size: 100px;
+  background-color: #f3c364;
+  border-radius: 21px;
+}
+
+.icon-nav-bar {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  gap: 16px;
+}

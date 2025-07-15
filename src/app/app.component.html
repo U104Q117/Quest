@@ -1,6 +1,33 @@
-<h1>問卷大全</h1>
 
 
-<button routerLink="/first" routerLinkActive="active">問卷</button>
+
+<!-- <button routerLink="/first/" routerLinkActive="active">使用者問卷總攬</button>
+<button routerLink="/third/" routerLinkActive="active">使用者問卷填寫</button> -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+
+<div class="icon-nav-bar" style="display: flex; gap: 20px;">
+  <span
+    class="material-symbols-outlined"
+    matTooltip="使用者問卷總攬"
+    routerLink="/first/"
+    style="cursor: pointer;"
+  >
+    home
+  </span>
+
+  <span
+    class="material-symbols-outlined"
+    matTooltip="使用者問卷填寫"
+    routerLink="/third/"
+    style="cursor: pointer;"
+  >
+    ink_marker
+  </span>
+</div>
+
+
 
 <router-outlet>
